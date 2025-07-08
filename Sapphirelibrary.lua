@@ -1,10 +1,30 @@
 
 local function AddDarkRedBorder(uiElement)
-    local stroke = Instance.new("UIStroke")
-    stroke.Color = Color3.fromRGB(139, 0, 0) -- vermelho escuro
-    stroke.Thickness = 2
-    stroke.Parent = uiElement
+    -- Verifica se o elemento existe e é um GuiObject
+    if uiElement and uiElement:IsA and uiElement:IsA("GuiObject") then
+        local stroke = Instance.new("UIStroke")
+        stroke.Color = Color3.fromRGB(139, 0, 0) -- vermelho escuro
+        stroke.Thickness = 2
+        stroke.Parent = uiElement
+    end
 end
+
+
+--[[
+     _      ___         ____  ______
+    | | /| / (_)__  ___/ / / / /  _/
+    | |/ |/ / / _ \/ _  / /_/ // /  
+    |__/|__/_/_//_/\_,_/\____/___/
+    
+    by .ftgs#0 (Discord)
+    
+    This script is NOT intended to be modified.
+    To view the source code, see the 'Src' folder on the official GitHub repository.
+    
+    Author: .ftgs#0 (Discord User)
+    Github: https://github.com/Footagesus/WindUI
+    Discord: https://discord.gg/84CNGY5wAV
+]]
 
 
 local a a={cache={}, load=function(b)if not a.cache[b]then a.cache[b]={c=a[b]()}end return a.cache[b].c end}do function a.a()
